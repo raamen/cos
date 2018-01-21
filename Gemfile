@@ -92,6 +92,7 @@ gem 'nokogiri'
 gem 'her'
 gem 'faraday'
 gem 'faraday_middleware'
+gem 'omniauth-twitter'
 =begin
 gem 'request_store'
 gem 'mojinizer'

@@ -4,3 +4,10 @@ h1
 p
   | Find me in app/views/home/index.html.erb
 = javascript_pack_tag 'hello_vue'
+div
+  #hello
+div
+  - if user_signed_in?
+    = link_to 'ログアウト', destroy_user_session_path
+  - else
+    = link_to "twitterでログイン", user_twitter_omniauth_authorize_path
